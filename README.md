@@ -51,7 +51,7 @@ class Jobs(object):
 
     @dynamodb_task()
     def step_2(self):
-        raise ("OUCH")
+        raise Exception ("OUCH")
         print("some business rules and fucntion calls logs  ")
 
 ```
