@@ -61,8 +61,12 @@ class Jobs(object):
 *  Whenever  you Decorate the method with dynamodb task this will log the meta data in dynamodb. this logs task start time and end time and status of task 
 * Status can be Success | Progress | Failed 
 
-##### Since teh method raised exception it marks process Failed 
+##### Since the method raised exception it marks process Failed 
 ![image](https://user-images.githubusercontent.com/39345855/196049088-1e9356fe-f348-4a19-92c2-2e89e531aa81.png)
+
+##### Exceptionj we generated in code can benn seen 
+![image](https://user-images.githubusercontent.com/39345855/196055412-f7ffd009-057d-493d-86eb-44e0c132ac4d.png)
+
 
 #### tasks 
 ![image](https://user-images.githubusercontent.com/39345855/196049188-120c6a29-af18-4471-aff0-59587b531553.png)
