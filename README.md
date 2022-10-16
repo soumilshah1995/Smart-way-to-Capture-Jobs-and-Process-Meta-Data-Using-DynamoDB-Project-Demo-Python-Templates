@@ -7,6 +7,17 @@
 
 #### Video : https://www.youtube.com/watch?v=OuqhoAZwFYw
 
+#### Install and Deploy Stack 
+
+```
+command 1: npm install -g serverless
+
+command 2: serverless config credentials --provider aws --key XXXX  --secret XXXXX -o
+
+command 3: serverless deploy
+
+```
+
 ### How to Use
 
 ```
