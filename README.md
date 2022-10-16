@@ -5,7 +5,15 @@
 
 ![Task_1024x576](https://user-images.githubusercontent.com/39345855/196048848-ebb8d6db-d94f-4f44-a8de-22e6331547dc.png)
 
+
+#### Overview: 
+In this article, I will present a solution that will allow you to easily monitor and capture status for running jobs and tasks. Capturing the details allows us to determine how long a process takes, what the status of the process is, and if necessary, dive into Task level details. When a job runs, it generates a unique process (GGUID), which represents the running or ongoing work. The process will have a start and end time and will display the status of ongoing activities. Each task in the process will have a name, a start and end time, and a status. If a task fails, the process status will be marked as failed. If a user needs more visibility for a function, they can simply log the function with decorator and all details will be captured in dynamodb for that task. I will demonstrate how to design and implement these solutions.
+
+
 #### Video : https://www.youtube.com/watch?v=OuqhoAZwFYw
+
+#### Read Article : https://www.linkedin.com/pulse/smart-way-capture-monitor-report-status-python-jobs-using-soumil-shah
+
 
 #### Install and Deploy Stack 
 
