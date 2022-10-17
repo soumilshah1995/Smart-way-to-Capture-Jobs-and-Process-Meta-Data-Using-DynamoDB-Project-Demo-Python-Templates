@@ -3,7 +3,15 @@
 
 # Smart way to Capture Jobs and Process Meta Data Using DynamoDB | Project Demo | Python Templates
 
-![Task_1024x576](https://user-images.githubusercontent.com/39345855/196048848-ebb8d6db-d94f-4f44-a8de-22e6331547dc.png)
+# Frontend 
+
+![ui_part1](https://user-images.githubusercontent.com/39345855/196276695-1280cf97-e799-44b7-b6e6-924b193315b3.PNG)
+
+* Shows all process that ran for given Day 
+
+![ui_part2](https://user-images.githubusercontent.com/39345855/196276811-6e3f831d-cfcf-400f-afe4-9ec0121ad058.PNG)
+
+* Shows all Task for Given Process for given Day (Query GSI View )
 
 
 #### Overview: 
