@@ -149,8 +149,8 @@
     }
 
     .logo .logo-img {
-        width: 60px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         background-color: var(--primary-color);
         border-radius: 10px;
         display: flex;
@@ -160,6 +160,7 @@
         cursor: pointer;
         -webkit-user-select: none;
         -moz-user-select: none;
+        background-color: #007BFF;
     }
 
     .logo-img .img {
@@ -193,6 +194,7 @@
         top: 50%;
         transform: translateY(-50%);
         right: -20px;
+        background-color: #007BFF;
     }
 
     .arrow svg {
@@ -481,21 +483,23 @@
 
 {%raw%}
     <script id="template-table" type="text/x-handlebars-template">
+
+    
+
+        <br/>
+        <br/>
+
         <div class="container-fluid alert alert-light">
             <br>
             <div class="row">
-                <div class="col-4">
-                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
-                </div>
-                <div  class="col-4"><a onclick="fn_search()"  href="javascript:void(0)" class="btn btn-primary" style="color: wheat;padding:5px;">Search</a></div>
-                <div class="col-2"><br/></div>
-                <div class="col-2"><input id="search" type="text" class="form-control"  placeholder="Filter Result"></div>
+                <div class="col-4"><input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/></div>
+                <div  class="col-1"><a onclick="fn_search()"  href="javascript:void(0)" class="btn btn-primary" style="color: wheat;padding:5px;">Search</a></div>
+                <div class="col-4"><input id="search" type="text" class="form-control"  placeholder="Filter Result"></div>
             </div>
             <br>
-
-            <table class="table table-hover table-responsive">
+            <table style="padding: 5px;" class="table table-hover table-responsive container-fluid">
                 <thead>
-                    <tr>
+                    <tr class="bg-primary" style="color: white;">
                         <th>Process ID</th>
                         <th>Start Date</th>
                         <th>End Date </th>
@@ -513,7 +517,7 @@
                         <td>{{this.process_end_date}}</td>
                         <td>
                             {{#if_cond process_status '===' 'failed'}}
-                                <span class="badge badge-danger" style="width: 100%">{{this.process_status}}</span>
+                                <span class="badge badge-pill badge-danger" style="width: 100%">{{this.process_status}}</span>
 
                             {{/if_cond}}
                             {{#if_cond process_status '===' 'success'}}
@@ -535,7 +539,7 @@
 
     <div class="modal-content">
         <div class="modal-header">
-            <h5 style="text-align: center;" class="modal-title">Tasks</h5>
+            <h5 style="text-align: center !important;" class="modal-title">Tasks</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
@@ -544,7 +548,7 @@
         <div class="modal-body">
             <table class="table table-hover table-responsive">
                 <thead>
-                <tr>
+                <tr class="bg-primary" style="color:white;">
                     <th>Task ID</th>
                     <th>Task Name</th>
                     <th>Task Start Date</th>
