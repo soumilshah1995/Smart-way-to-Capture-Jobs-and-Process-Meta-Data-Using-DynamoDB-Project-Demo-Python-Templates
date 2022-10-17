@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://apis.google.com/js/platform.js"></script>
+
+
+    <!-- Boot Strap css Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+    <!-- JQuery links  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Handel Barjs -->
+    <script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
+
+    <!-- Font ASUM-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- select2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+    <!-- ToASTR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+    <!-- Bootstrap Date-Picker Plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+</head>
+<body>
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    :root {
+        /* ====== light colors =======  */
+        --body-color: #e4e9f7;
+        --sidebar-color: rgba(255, 255, 255, 0.822);
+        --primary-color-light: #fffbf5;
+        --primary-color: #ff7700;
+        --secondary-color: #aca6a6;
+        --secondary-color-light: #e7e7e7;
+        --text-color: #707070;
+
+        /* ======= transition ==== ; */
+        --tran-02: all 0.2s ease;
+        --tran-03: all 0.3s ease;
+        --tran-04: all 0.4s ease;
+        --tran-05: all 0.5s ease;
+    }
+
+    body {
+        font-family: cursive, Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        width: 100vw;
+        background-color: var(--body-color);
+    }
+
+    body.dark {
+        /* ====== dark colors =======  */
+        --body-color: #808080;
+        --sidebar-color: #161616;
+        --primary-color-light: #8585855d;
+        --primary-color: #ff7700;
+        --secondary-color: #fafafa;
+        --secondary-color-light: #fff8f8;
+        --text-color: #ffffff;
+    }
+
+    body.dark {
+        color: var(--text-color);
+    }
+
+    .sidebar {
+        position: fixed;
+        left: 0;
+        width: 250px;
+        height: 100vh;
+        padding: 10px 0 10px 10px;
+        background-color: var(--sidebar-color);
+        z-index: 100;
+        transition: var(--tran-04);
+    }
+
+    .close {
+        max-width: 90px;
+        transition: var(--tran-03);
+    }
+
+    .close .title,
+    .close .toggle-text,
+    .close .toggle,
+    .close .menu-bar input {
+        display: none;
+        transition: var(--tran-04);
+    }
+
+    header {
+        position: relative;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo .logo-img {
+        width: 60px;
+        height: 50px;
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+
+    .logo-img .img {
+        color: var(--sidebar-color);
+        font-size: 2.3em;
+        font-weight: 700;
+    }
+
+    .header-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: var(--text-color);
+    }
+
+    .name {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    /* ======= collapse arrow ======== */
+
+    .arrow {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+    }
+
+    .arrow svg {
+        fill: var(--sidebar-color);
+    }
+
+    .close .arrow svg {
+        transform: rotate(180deg) translate(-50%);
+    }
+
+    /* ===== menu-bar svg ======= */
+
+    .menu-bar svg {
+        min-width: 20px;
+        margin-left: 10px;
+        height: 40px;
+        fill: var(--text-color);
+    }
+
+    .close .menu-bar svg {
+        padding: 9px;
+    }
+
+    /* ======= search =======  */
+
+    .menu-bar label svg {
+        min-width: 20px;
+        margin-left: 10px;
+        padding: 9px;
+        height: 40px;
+        fill: var(--text-color);
+    }
+
+    .search-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: calc(100% - 20px);
+        margin-top: 10px;
+        background-color: var(--primary-color-light);
+    }
+    .search-btn input {
+        width: 100%;
+        height: 100%;
+        outline: none;
+        font-size: 1.065em;
+        font-weight: 100;
+        padding-left: 6px;
+        border: none;
+        background-color: var(--primary-color-light);
+    }
+
+    /* ======= nav-link ========  */
+
+    li a svg {
+        padding: calc(100% - 96%);
+        margin-right: 10px;
+        fill: var(--text-color);
+        border-radius: 7px;
+    }
+
+    .sidebar li {
+        list-style: none;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .nav-link a {
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--text-color);
+        transition: all var(--tran-02);
+        width: calc(100% - 20px);
+    }
+
+    .nav-link a:hover {
+        background-color: var(--secondary-color-light);
+        color: var(--text-color);
+    }
+
+    .dark .nav-link a:hover {
+        background-color: var(--primary-color-light);
+        color: var(--text-color);
+    }
+
+    .menu-bar {
+        height: calc(100% - 10vh);
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    /* ======= bright and dark mode =======  */
+
+    div svg {
+        padding: calc(100% - 96%);
+        margin-right: 10px;
+        fill: var(--text-color);
+        border-radius: 7px;
+    }
+
+    .toggle-btn {
+        background-color: var(--primary-color-light);
+        width: calc(100% - 20px);
+        cursor: pointer;
+    }
+
+    .moon {
+        position: absolute;
+    }
+
+    .toggle-btn .moon {
+        opacity: 0;
+    }
+
+    /* ===== dark mode ======  */
+
+    body.dark .moon {
+        opacity: 1;
+        transition: var(--tran-04);
+    }
+
+    body.dark .moon svg {
+        fill: var(--sidebar-color);
+        transition: var(--tran-04);
+    }
+
+    body.dark .sun {
+        opacity: 0;
+    }
+
+    .toggle-btn div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 40px;
+    }
+
+    .toggle-text {
+        color: var(--text-color);
+    }
+
+    .toggle {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .circle {
+        position: relative;
+        width: 40px;
+        height: 50%;
+        border-radius: 10px;
+        background-color: var(--secondary-color);
+    }
+
+    .circle::before {
+        content: "";
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        background-color: var(--primary-color-light);
+        transition: var(--tran-04);
+    }
+
+    body.dark .circle::before {
+        left: 20px;
+        transition: var(--tran-04);
+    }
+
+    /* ======= dashboard content =======  */
+
+    .home {
+        position: relative;
+        left: 250px;
+        height: 100vh;
+        width: calc(100% - 250px);
+        padding: 10px;
+        color: var(--text-color);
+    }
+
+    .close ~ .home {
+        left: 90px;
+        width: calc(100% - 90px);
+    }
+
+    .home header {
+        text-align: center;
+        font-size: 2em;
+    }
+
+</style>
+
+<nav class="sidebar">
+    <header>
+        <div class="logo">
+      <span class="logo-img">
+        <span class="img">
+          S
+        </span>
+      </span>
+            <div class="title header-title">
+        <span class="name">
+          Hi Soumil
+        </span>
+                <span class="profession">
+
+        </span>
+            </div>
+        </div>
+        <div class="arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                <path d="M192 448c-8.188 0-16.38-3.125-22.62-9.375l-160-160c-12.5-12.5-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l137.4 137.4c12.5 12.5 12.5 32.75 0 45.25C208.4 444.9 200.2 448 192 448z" />
+            </svg>
+        </div>
+    </header>
+    <div class="menu-bar">
+        <div class="menu">
+
+            <ul class="menu-link">
+                <li class="nav-link">
+                    <a href="#">
+                        <span class="title nav">Daily Process Reports</span>
+                    </a>
+                </li>
+
+            </ul>
+
+            <div class="toggle-btn">
+                <div class="moon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z" />
+                    </svg>
+                    <span class="toggle-text">Dark mode</span>
+                    <div class="toggle">
+                        <span class="circle"></span>
+                    </div>
+                </div>
+                <div class="sun">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z" />
+                    </svg>
+                    <span class="toggle-text">Light mode</span>
+                    <div class="toggle">
+                        <span class="circle"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<main class="home">
+    <header>Dashboard</header>
+    <div id="main-template"></div>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div id="modal-template"></div>
+        </div>
+    </div>
+
+    <footer></footer>
+</main>
+
+
+{%raw%}
+    <script id="template-table" type="text/x-handlebars-template">
+        <div class="container-fluid alert alert-light">
+            <br>
+            <div class="row">
+                <div class="col-4">
+                    <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                </div>
+                <div  class="col-4"><a onclick="fn_search()"  href="javascript:void(0)" class="btn btn-primary" style="color: wheat;padding:5px;">Search</a></div>
+                <div class="col-2"><br/></div>
+                <div class="col-2"><input id="search" type="text" class="form-control"  placeholder="Filter Result"></div>
+            </div>
+            <br>
+
+            <table class="table table-hover table-responsive">
+                <thead>
+                    <tr>
+                        <th>Process ID</th>
+                        <th>Start Date</th>
+                        <th>End Date </th>
+                        <th>Status </th>
+                        <th>Error Message </th>
+                        <th>History </th>
+
+                    </tr>
+                </thead>
+                <tbody id="table">
+                {{#each data}}
+                    <tr>
+                        <td>{{this.pk}}</td>
+                        <td>{{this.process_start_date}}</td>
+                        <td>{{this.process_end_date}}</td>
+                        <td>
+                            {{#if_cond process_status '===' 'failed'}}
+                                <span class="badge badge-danger" style="width: 100%">{{this.process_status}}</span>
+
+                            {{/if_cond}}
+                            {{#if_cond process_status '===' 'success'}}
+                                <span class="badge badge-pill badge-success" style="width: 100%" >{{this.process_status}}</span>
+                            {{/if_cond}}
+                        </td>
+                        <td>
+                            {{this.process_error_message}}
+                        </td>
+                        <td><a href="javascript:void(0)"  onclick="fn_view_task('{{this.pk}}')"><span class="badge badge-info">View Task </span></a></td>
+                    </tr>
+                {{/each}}
+
+                </tbody>
+            </table>
+    </script>
+
+    <script id="template-task-modal" type="text/x-handlebars-template">
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 style="text-align: center;" class="modal-title">Tasks</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <table class="table table-hover table-responsive">
+                <thead>
+                <tr>
+                    <th>Task ID</th>
+                    <th>Task Name</th>
+                    <th>Task Start Date</th>
+                    <th>Task End Date </th>
+                    <th>Status </th>
+                    <th>Error Message </th>
+                </tr>
+                </thead>
+                <tbody id="table-modal">
+                {{#each data}}
+                <tr>
+                    <td>{{this.pk}}</td>
+                    <td>{{this.task_name}}</td>
+                    <td>{{this.task_start_date}}</td>
+                    <td>{{this.task_end_date}}</td>
+                    <td>
+                        {{#if_cond task_status '===' 'failed'}}
+                        <span class="badge badge-danger" style="width: 100%">{{this.task_status}}</span>
+
+                        {{/if_cond}}
+                        {{#if_cond task_status '===' 'success'}}
+                        <span class="badge badge-pill badge-success" style="width: 100%" >{{this.task_status}}</span>
+                        {{/if_cond}}
+                    </td>
+                    <td>
+                        {{this.task_error_message}}
+                    </td>
+
+                </tr>
+                {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <div class="modal-footer">
+            <button  type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+
+    </div>
+</script>
+
+{%endraw%}
+
+
+
+<script>
+
+    const body = document.querySelector("body"),
+        sideBar = document.querySelector(".sidebar"),
+        toggle = document.querySelector(".arrow"),
+        searchBtn = document.querySelector(".search-icon"),
+        modeBtn = document.querySelector(".toggle-btn");
+
+    toggle.addEventListener("click", () => {
+        sideBar.classList.toggle("close");
+    });
+
+    modeBtn.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+            modeText.innerText = "Dark Mode";
+        } else {
+            modeText.innerText = "Light Mode";
+        }
+    });
+
+
+
+    var Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 5000
+    });
+
+    var selected_date;
+
+    $(document).ready(function() {
+
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+        selected_date = `${yyyy}-${mm}-${dd}`
+        console.log(selected_date)
+        let payload = {
+            "date":selected_date
+        }
+        $.ajax({
+            url: "/get_data_day",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+                console.log(response);
+
+                templateScript = Handlebars.compile($('#template-table').html());
+                $("#main-template").html(templateScript(response));
+
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#table tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+
+                var options={
+                    format: 'yyyy-mm-dd',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                };
+                date_input.datepicker(options);
+            },
+            error : function (response){
+                coordinates = []
+                toastr.error('No Result Found') // error, info, warning
+
+            }
+        });
+
+    } );
+
+
+    function fn_search(){
+
+        let payload = {
+            "date":$("#date").val()
+        }
+
+        $.ajax({
+            url: "/get_data_day",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+
+                console.log(response);
+
+                templateScript = Handlebars.compile($('#template-table').html());
+                $("#main-template").html(templateScript(response));
+
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#table tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+
+                var date_input=$('input[name="date"]'); //our date input has the name "date"
+                var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+
+                var options={
+                    format: 'yyyy-mm-dd',
+                    container: container,
+                    todayHighlight: true,
+                    autoclose: true,
+                };
+                date_input.datepicker(options);
+            },
+            error : function (response){
+                coordinates = []
+                toastr.error('No Result Found') // error, info, warning
+
+            }
+        });
+
+    }
+
+    function fn_view_task(pk){
+        console.log(pk);
+        let payload = {"process": pk}
+        $.ajax({
+            url: "/get_tasks",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+                console.log("response");
+                console.log(response);
+
+                templateScript = Handlebars.compile($('#template-task-modal').html());
+                $("#modal-template").html(templateScript(response));
+
+                $('#exampleModalCenter').modal("show");
+
+            },
+            error : function (response){
+                coordinates = []
+                toastr.error('No Result Found') // error, info, warning
+
+            }
+        });
+
+    }
+
+    Handlebars.registerHelper('escape', function(variable) {
+        return variable.replace(/(['"])/g, '\\$1');
+    });
+
+    Handlebars.registerHelper('if_cond', function (v1, operator, v2, options) {
+        switch (operator) {
+            case '==':
+                return (v1 == v2) ? options.fn(this) : options.inverse(this);
+            case '===':
+                return (v1 === v2) ? options.fn(this) : options.inverse(this);
+            case '!=':
+                return (v1 != v2) ? options.fn(this) : options.inverse(this);
+            case '!==':
+                return (v1 !== v2) ? options.fn(this) : options.inverse(this);
+            case '<':
+                return (v1 < v2) ? options.fn(this) : options.inverse(this);
+            case '<=':
+                return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+            case '>':
+                return (v1 > v2) ? options.fn(this) : options.inverse(this);
+            case '>=':
+                return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+            case '&&':
+                return (v1 && v2) ? options.fn(this) : options.inverse(this);
+            case '||':
+                return (v1 || v2) ? options.fn(this) : options.inverse(this);
+            default:
+                return options.inverse(this);
+        }
+    });
+
+</script>
+
+</body>
+</html>
