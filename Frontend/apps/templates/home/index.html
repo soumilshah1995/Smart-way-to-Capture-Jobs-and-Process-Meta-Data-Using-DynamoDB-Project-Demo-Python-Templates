@@ -1,0 +1,480 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} Dashboard {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<!--Bootstrap CSS-->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<!--Bootstrap JS-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://apis.google.com/js/platform.js"></script>
+
+
+<!-- Boot Strap css Links -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+
+<!-- JQuery links  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Handel Barjs -->
+<script src="https://twitter.github.io/typeahead.js/js/handlebars.js"></script>
+
+<!-- Font ASUM-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+<!-- select2 -->
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+
+<!-- ToASTR -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css">
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+<!-- Bootstrap Date-Picker Plugin -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+
+<style>
+    #modal-template {
+        width: 900px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cardtext{
+        color: white;
+    }
+</style>
+
+
+    <!-- [ Main Content ] start -->
+    <div class="pcoded-main-container">
+        <div class="pcoded-wrapper">
+
+            <div class="pcoded-content">
+                <div class="pcoded-inner-content">
+                    <!-- [ breadcrumb ] start -->
+
+                    <!-- [ breadcrumb ] end -->
+                    <div class="main-body">
+                        <div class="page-wrapper">
+
+                            <!-- [ Main Content ] start -->
+                            <div class="row">
+
+
+                                <!--[ daily sales section ] start-->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="card daily-sales bg-info">
+                                        <div class="card-block">
+                                            <h6 class="mb-4 cardtext">Daily Process</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 id="daily-process" class="cardtext f-w-300 d-flex align-items-center m-b-0"><i
+                                                            class="cardtext feather  text-c-green f-30 m-r-10"></i>
+
+                                                        </h3>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--[ daily sales section ] end-->
+
+
+                                <!--[ daily sales section ] start-->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="card daily-sales bg-success">
+                                        <div class="card-block">
+                                            <h6 class="mb-4 cardtext">Daily Process Successful</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3 id="success-records" class="cardtext f-w-300 d-flex align-items-center m-b-0"><i
+                                                            class="cardtext feather  text-c-green f-30 m-r-10"></i>
+
+                                                    </h3>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--[ daily sales section ] end-->
+
+                                <!--[ daily sales section ] start-->
+                                <div class="col-md-6 col-xl-4">
+                                    <div class="card daily-sales bg-danger">
+                                        <div class="card-block">
+                                            <h6 class="cardtext" class="mb-4">Daily Process Failed</h6>
+                                            <div class="row d-flex align-items-center">
+                                                <div class="col-9">
+                                                    <h3  id="failed-records" class="cardtext f-w-300 d-flex align-items-center m-b-0"><i
+                                                            class="cardtext feather  text-c-green f-30 m-r-10"></i>
+
+                                                    </h3>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--[ daily sales section ] end-->
+
+                            </div>
+                            <!-- [ Main Content ] end -->
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>process</h5>
+                                        </div>
+                                        <div id="main-template"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div id="modal-template"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- [ Main Content ] end -->
+{%raw%}
+
+<script id="template-table" type="text/x-handlebars-template">
+    <div class="row">
+        <div class="col-4"><input class="form-control" id="date" name="date" placeholder="2022-10-18" type="text"/></div>
+        <div  class="col-1"><a onclick="fn_search()"  href="javascript:void(0)" class="btn btn-primary" style="color: wheat;padding:5px;">Search</a></div>
+        <div class="col-4"><input id="search" type="text" class="form-control"  placeholder="Filter Result"></div>
+    </div>
+    <br/>
+    <br/>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Process ID</th>
+                    <th>Start Date</th>
+                    <th>End Date </th>
+                    <th>Status </th>
+                    <th>Error Message </th>
+                    <th>History </th>
+                </tr>
+            </thead>
+            <tbody id="table">
+            {{#each data}}
+                <tr>
+                    <td>{{this.pk}}</td>
+                    <td>{{this.process_start_date}}</td>
+                    <td>{{this.process_end_date}}</td>
+                    <td>
+
+                        {{#if_cond process_status '===' 'failed'}}
+                            <span class="badge badge-pill badge-danger" style="width: 100%">{{this.process_status}}
+                            </span>
+                        {{/if_cond}}
+
+                        {{#if_cond process_status '===' 'success'}}
+                            <span class="badge badge-pill badge-success" style="width: 100%" >{{this.process_status}}</span>
+                        {{/if_cond}}
+
+                    </td>
+                    <td>
+                        {{this.process_error_message}}
+                    </td>
+                    <td><a href="javascript:void(0)"  onclick="fn_view_task('{{this.pk}}')"><span class="badge badge-info">View Task </span></a></td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</script>
+
+<script id="template-task-modal" type="text/x-handlebars-template">
+
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 style="text-align: center !important;" class="modal-title">Tasks</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="modal-body">
+            <table class="table table-hover table-responsive">
+                <thead>
+                <tr class="bg-primary" style="color:white;">
+                    <th>Task ID</th>
+                    <th>Task Name</th>
+                    <th>Task Start Date</th>
+                    <th>Task End Date </th>
+                    <th>Status </th>
+                    <th>Error Message </th>
+                </tr>
+                </thead>
+                <tbody id="table-modal">
+                {{#each data}}
+                <tr>
+                    <td>{{this.pk}}</td>
+                    <td>{{this.task_name}}</td>
+                    <td>{{this.task_start_date}}</td>
+                    <td>{{this.task_end_date}}</td>
+                    <td>
+                        {{#if_cond task_status '===' 'failed'}}
+                        <span class="badge badge-danger" style="width: 100%">{{this.task_status}}</span>
+
+                        {{/if_cond}}
+                        {{#if_cond task_status '===' 'success'}}
+                        <span class="badge badge-pill badge-success" style="width: 100%" >{{this.task_status}}</span>
+                        {{/if_cond}}
+                    </td>
+                    <td>
+                        {{this.task_error_message}}
+                    </td>
+
+                </tr>
+                {{/each}}
+
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <div class="modal-footer">
+            <button  type="button" class="close" data-dismiss="modal" aria-label="Close">Close</button>
+        </div>
+
+    </div>
+</script>
+
+{%endraw%}
+
+<script>
+    var selected_date;
+
+    function fn_search(){
+
+        let payload = {
+            "date":$("#date").val()
+        }
+
+        $.ajax({
+            url: "/get_data_day",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+
+                console.log(response);
+                let failed = 0;
+                let success = 0;
+
+                $("#daily-process").text(response.data.length);
+
+                $.each(response.data, function( index, value ) {
+                    if(value.process_status === "failed"){
+                        failed = failed + 1;
+                    }
+                    if(value.process_status === "success"){
+                        success = success + 1;
+                    }
+                });
+
+
+                $("#failed-records").text(failed);
+                $("#success-records").text(success);
+                templateScript = Handlebars.compile($('#template-table').html());
+                $("#main-template").html(templateScript(response));
+
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#table tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+
+
+            },
+            error : function (response){
+                coordinates = []
+                toastr.error('No Result Found') // error, info, warning
+
+            }
+        });
+
+    }
+
+    $(document).ready(function() {
+
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+        var yyyy = today.getFullYear();
+
+        today = mm + '/' + dd + '/' + yyyy;
+        selected_date = `${yyyy}-${mm}-${dd}`
+        console.log(selected_date)
+        let payload = {
+            "date":selected_date
+        }
+        $.ajax({
+            url: "/get_data_day",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+
+                let failed = 0;
+                let success = 0;
+
+                $("#daily-process").text(response.data.length);
+
+                $.each(response.data, function( index, value ) {
+                    if(value.process_status === "failed"){
+                        failed = failed + 1;
+                    }
+                    if(value.process_status === "success"){
+                        success = success + 1;
+
+                    }
+                });
+
+
+                $("#failed-records").text(failed);
+                $("#success-records").text(success);
+
+                templateScript = Handlebars.compile($('#template-table').html());
+                $("#main-template").html(templateScript(response));
+
+
+                $("#search").on("keyup", function() {
+                    var value = $(this).val().toLowerCase();
+                    $("#table tr").filter(function() {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                    });
+                });
+
+
+            },
+            error : function (response){
+                console.log(response)
+
+
+            }
+        });
+
+    } );
+
+    Handlebars.registerHelper('escape', function(variable) {
+        return variable.replace(/(['"])/g, '\\$1');
+    });
+
+    function fn_view_task(pk){
+        console.log(pk);
+        let payload = {"process": pk}
+        $.ajax({
+            url: "/get_tasks",
+            type : 'POST',
+            cache: true,
+            data:{'data': JSON.stringify(payload)},
+            success: function(response) {
+
+
+                templateScript = Handlebars.compile($('#template-task-modal').html());
+                $("#modal-template").html(templateScript(response));
+
+                $('#exampleModalCenter').modal("show");
+
+            },
+            error : function (response){
+                coordinates = []
+                toastr.error('No Result Found') // error, info, warning
+
+            }
+        });
+
+    }
+
+
+    Handlebars.registerHelper('if_cond', function (v1, operator, v2, options) {
+        switch (operator) {
+            case '==':
+                return (v1 == v2) ? options.fn(this) : options.inverse(this);
+            case '===':
+                return (v1 === v2) ? options.fn(this) : options.inverse(this);
+            case '!=':
+                return (v1 != v2) ? options.fn(this) : options.inverse(this);
+            case '!==':
+                return (v1 !== v2) ? options.fn(this) : options.inverse(this);
+            case '<':
+                return (v1 < v2) ? options.fn(this) : options.inverse(this);
+            case '<=':
+                return (v1 <= v2) ? options.fn(this) : options.inverse(this);
+            case '>':
+                return (v1 > v2) ? options.fn(this) : options.inverse(this);
+            case '>=':
+                return (v1 >= v2) ? options.fn(this) : options.inverse(this);
+            case '&&':
+                return (v1 && v2) ? options.fn(this) : options.inverse(this);
+            case '||':
+                return (v1 || v2) ? options.fn(this) : options.inverse(this);
+            default:
+                return options.inverse(this);
+        }
+    });
+
+</script>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
