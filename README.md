@@ -9,7 +9,7 @@
 
 * Shows all process that ran for given Day 
 
-![ui_part2](https://user-images.githubusercontent.com/39345855/196276811-6e3f831d-cfcf-400f-afe4-9ec0121ad058.PNG)
+![p2](https://user-images.githubusercontent.com/39345855/196511340-d5c27bec-235c-48f6-bcb0-f68b383aa9d2.PNG)
 
 * Shows all Task for Given Process for given Day (Query GSI View )
 
