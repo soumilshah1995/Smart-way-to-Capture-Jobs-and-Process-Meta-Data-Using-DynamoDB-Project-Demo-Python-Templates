@@ -5,7 +5,7 @@
 
 # Frontend 
 
-![MicrosoftTeams-image (1)](https://user-images.githubusercontent.com/39345855/196511151-35d0f107-9fde-46bd-84cd-3d0c7ec0c8f0.png)
+![image](https://user-images.githubusercontent.com/39345855/196523801-54b00e18-f1a3-4ea3-8b6c-f153b72dee8b.png)
 
 * Shows all process that ran for given Day 
 
