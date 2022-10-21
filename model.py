@@ -159,7 +159,7 @@ class DayView(Model):
         region = os.getenv("AWS_REGION")
 
     pk = UnicodeAttribute(null=True)
-    sk = NumberAttribute(null=True)
+    sk = UnicodeAttribute(null=True)
 
     # --------Process --------------
     process_start_date = UnicodeAttribute(null=True)
@@ -223,7 +223,7 @@ class MonthView(Model):
         region = os.getenv("AWS_REGION")
 
     pk = UnicodeAttribute(null=True)
-    sk = NumberAttribute(null=True)
+    sk = UnicodeAttribute(null=True)
 
     # --------Process --------------
     process_start_date = UnicodeAttribute(null=True)
@@ -356,8 +356,8 @@ class Task:
                 sk=self.task_id,
                 task_start_date=str(datetime.now()),
                 ttl=set_ttl_time(),
-                gsi_date_month=f"{year}-{month}",
-                gsi_date_day=f"{year}-{month}-{day}",
+                # gsi_date_month=f"{year}-{month}",
+                # gsi_date_day=f"{year}-{month}-{day}",
                 task_name=name,
                 gs1_process=process_id
             ).save()
@@ -427,6 +427,7 @@ def dynamodb_task(argument=None):
                 task_instance.success()
                 return response
             except Exception as e:
+                print("*******ERRROR*********", e)
                 response = {"status": -1, "error": {"message": str(e)}}
 
                 task_instance.failed(error_message=str(response))
@@ -443,7 +444,7 @@ def dynamodb_task(argument=None):
 # ------------------------------------------------------------------------------------------------
 # Business Class
 
-
+#
 class Jobs(object):
     def __init__(self):
         self.process_instance = Process()
@@ -454,32 +455,31 @@ class Jobs(object):
         self.process_instance.progress()
 
     def run(self):
-        response_1 = self.step_1()
-        response_2 = self.step_2()
+        response_1 = self.step_1_start_jobs()
+        response_2 = self.step_2_hello()
 
         self.process_instance.success()
 
     @dynamodb_task()
-    def step_1(self):
+    def step_1_start_jobs(self):
         print("some business rules and code goes here ")
         print("some more business rules and code goes here ")
 
     @dynamodb_task()
-    def step_2(self):
-        raise ("OUCH")
-        print("some business rules and fucntion calls logs  ")
+    def step_2_hello(self):
+        raise Exception ("ERROR ")
+
+
+
 
 
 # --------------------------------------------------------------------------------------------
 
 
-def main():
 
+def main():
 
     helper =Jobs()
     helper.run()
 
-
-
-if __name__ == "__main__":
-    main()
+main()

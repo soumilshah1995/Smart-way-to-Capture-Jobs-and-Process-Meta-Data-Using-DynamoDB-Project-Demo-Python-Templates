@@ -2,17 +2,17 @@
 """
 Copyright (c) 2019 - present AppSeed.us
 """
+try:
+    from dotenv import load_dotenv
+    load_dotenv("../.env")
 
-from dotenv import load_dotenv
-load_dotenv(".env")
-from flask_minify  import Minify
+except Exception as e:
+    print("Error : {} ".format(e))
 
 from apps import app
 
 DEBUG = app.config['DEBUG'] 
 
-if not DEBUG:
-    Minify(app=app, html=True, js=False, cssless=False)
 
 app.logger.info('DEBUG            = ' + str( DEBUG )                 )
 app.logger.info('Page Compression = ' + 'FALSE' if DEBUG else 'TRUE' )
