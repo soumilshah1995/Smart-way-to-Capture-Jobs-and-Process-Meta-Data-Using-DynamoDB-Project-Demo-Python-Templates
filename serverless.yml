@@ -48,7 +48,7 @@ resources:
     MySubscription:
       Type: AWS::SNS::Subscription
       Properties:
-        Endpoint: shahsoumil519@gmail.com
+        Endpoint: your_email.com
         Protocol: email
         TopicArn: !Ref 'SNSTopic'
 
