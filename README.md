@@ -3,29 +3,27 @@
 
 # Smart way to Capture Jobs and Process Meta Data Using DynamoDB | Project Demo | Python Templates | Alerts 
 
-# Architecture 
 
-![capture drawio](https://user-images.githubusercontent.com/39345855/197229798-7c209d51-b44d-4856-860e-b6fab1d63957.png)
-
-
-# Frontend 
-
-![image](https://user-images.githubusercontent.com/39345855/196523801-54b00e18-f1a3-4ea3-8b6c-f153b72dee8b.png)
-
-* Shows all process that ran for given Day 
-
-![p2](https://user-images.githubusercontent.com/39345855/196511340-d5c27bec-235c-48f6-bcb0-f68b383aa9d2.PNG)
-
-* Shows all Task for Given Process for given Day (Query GSI View )
-
-### Alerts 
-![image](https://user-images.githubusercontent.com/39345855/197229526-39d072db-c600-47d7-a1b9-e6c79958fe7c.png)
-* Sends Alerts for failed process using kinesis streams lambda and SNS 
 
 
 
 #### Overview: 
 In this article, I will present a solution that will allow you to easily monitor and capture status for running jobs and tasks. Capturing the details allows us to determine how long a process takes, what the status of the process is, and if necessary, dive into Task level details. When a job runs, it generates a unique process (GGUID), which represents the running or ongoing work. The process will have a start and end time and will display the status of ongoing activities. Each task in the process will have a name, a start and end time, and a status. If a task fails, the process status will be marked as failed. If a user needs more visibility for a function, they can simply log the function with decorator and all details will be captured in dynamodb for that task. I will demonstrate how to design and implement these solutions.
+
+# Architecture 
+![capture drawio](https://user-images.githubusercontent.com/39345855/197229798-7c209d51-b44d-4856-860e-b6fab1d63957.png)
+
+
+# Frontend 
+![image](https://user-images.githubusercontent.com/39345855/196523801-54b00e18-f1a3-4ea3-8b6c-f153b72dee8b.png)
+
+* Shows all process that ran for given Day 
+![p2](https://user-images.githubusercontent.com/39345855/196511340-d5c27bec-235c-48f6-bcb0-f68b383aa9d2.PNG)
+* Shows all Task for Given Process for given Day (Query GSI View )
+
+### Alerts 
+![image](https://user-images.githubusercontent.com/39345855/197229526-39d072db-c600-47d7-a1b9-e6c79958fe7c.png)
+* Sends Alerts for failed process using kinesis streams lambda and SNS 
 
 
 #### Video : https://www.youtube.com/watch?v=OuqhoAZwFYw
