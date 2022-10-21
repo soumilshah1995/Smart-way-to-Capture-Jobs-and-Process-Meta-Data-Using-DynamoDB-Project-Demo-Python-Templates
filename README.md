@@ -31,7 +31,8 @@ In this article, I will present a solution that will allow you to easily monitor
 #### Read Article : https://www.linkedin.com/pulse/smart-way-capture-monitor-report-status-python-jobs-using-soumil-shah
 
 #### change and add your email where you would like
-please change this block in severless.yml 
+please email address in  severless.yml 
+Email address will recive alerts for failed process 
 ```
   MySubscription:
       Type: AWS::SNS::Subscription
