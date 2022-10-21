@@ -1,7 +1,12 @@
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?maxAge=2592000)]
 
-# Smart way to Capture Jobs and Process Meta Data Using DynamoDB | Project Demo | Python Templates
+# Smart way to Capture Jobs and Process Meta Data Using DynamoDB | Project Demo | Python Templates | Alerts 
+
+# Architecture 
+
+![capture drawio](https://user-images.githubusercontent.com/39345855/197229798-7c209d51-b44d-4856-860e-b6fab1d63957.png)
+
 
 # Frontend 
 
@@ -12,6 +17,11 @@
 ![p2](https://user-images.githubusercontent.com/39345855/196511340-d5c27bec-235c-48f6-bcb0-f68b383aa9d2.PNG)
 
 * Shows all Task for Given Process for given Day (Query GSI View )
+
+### Alerts 
+![image](https://user-images.githubusercontent.com/39345855/197229526-39d072db-c600-47d7-a1b9-e6c79958fe7c.png)
+* Sends Alerts for failed process using kinesis streams lambda and SNS 
+
 
 
 #### Overview: 
